@@ -31,6 +31,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Setup tmux.conf
 cp .tmux.conf ~/.tmux.conf
+echo "Ignore 'error connecting to /tmp//tmux-1001/default':"
 tmux source-file ~/.tmux.conf
 
 # Install antigen
