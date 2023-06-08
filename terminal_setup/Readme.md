@@ -1,5 +1,9 @@
 Tmux Cheat Sheet & Quick Reference  https://tmuxcheatsheet.com/
 
-If conda is installed.
+Once setup is done:
 
-Run `conda init zsh` in bash and source zshrc
+For tmux -> prefix + I (capital i) to install plugins
+
+For conda -> 
+1. `bash && conda init zsh` 
+2. `zsh && source ~/.zshrc`
