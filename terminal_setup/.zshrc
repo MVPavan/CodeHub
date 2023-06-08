@@ -1,5 +1,5 @@
 # source antigen
-source ~/Downloads/terminal_setup/antigen.zsh
+source ~/.oh-my-zsh/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh

@@ -35,8 +35,7 @@ echo "Ignore 'error connecting to /tmp//tmux-1001/default':"
 tmux source-file ~/.tmux.conf
 
 # Install antigen
-mkdir -p ~/Downloads/terminal_setup/
-curl -L git.io/antigen > ~/Downloads/terminal_setup/antigen.zsh
+curl -L git.io/antigen > ~/.oh-my-zsh/antigen.zsh
 
 # Setup zshrc
 cp .zshrc ~/.zshrc
