@@ -1,0 +1,15 @@
+VSCODE Extensions:
+
+	• "ms-azuretools.vscode-docker",
+	• "ms-vscode-remote.vscode-remote-extensionpack",
+	• "sugatoray.vscode-git-extension-pack",
+	• "franneck94.vscode-python-dev-extension-pack",
+	• "franneck94.vscode-c-cpp-dev-extension-pack",
+	• "franneck94.vscode-coding-tools-extension-pack",
+	• "gruntfuggly.todo-tree",
+	• "vscode-icons-team.vscode-icons",
+	• "streetsidesoftware.code-spell-checker",
+	• "oderwat.indent-rainbow",
+	• "mechatroner.rainbow-csv",
+	• "moshfeu.compare-folders",
+  • "mikestead.dotenv"
