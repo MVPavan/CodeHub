@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Script to change the author of all commits
+
+# Check if the correct number of arguments are passed
+if [ "$#" -ne 3 ]; then
+    echo "Usage: ./change_author.sh <Old Author Name> <New Author Name> <New Author Email>"
+    exit 1
+fi
+
+OLD_AUTHOR="$1"
+NEW_AUTHOR="$2"
+NEW_EMAIL="$3"
+
+# Fetch the ID of the root commit
+ROOT_COMMIT=$(git rev-list --max-parents=0 HEAD)
+
+# Start the rebase process
+git filter-branch --env-filter '
+if [ "$GIT_AUTHOR_NAME" = "'"$OLD_AUTHOR"'" ]
+then
+    export GIT_AUTHOR_NAME="'"$NEW_AUTHOR"'"
+    export GIT_AUTHOR_EMAIL="'"$NEW_EMAIL"'"
+    export GIT_COMMITTER_NAME="'"$NEW_AUTHOR"'"
+    export GIT_COMMITTER_EMAIL="'"$NEW_EMAIL"'"
+fi
+' --tag-name-filter cat -- --branches --tags
+
+echo "Done! Remember, you might need to force push to update the remote repository."
+echo "git push origin dev --force-with-lease"
