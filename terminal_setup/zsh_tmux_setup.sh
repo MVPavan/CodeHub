@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Update packages and Install Git
 echo "Updating packages and Installing Git..."
